@@ -1,0 +1,30 @@
+{
+  "name": "nation-compute",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Build on the NATION Compute API: one OpenAI-compatible key across many models, paid with compute credits.",
+  "type": "module",
+  "license": "Apache-2.0",
+  "homepage": "https://thenation.city",
+  "engines": { "node": ">=22.18.0" },
+  "main": "./src/index.ts",
+  "scripts": {
+    "test": "node --test \"test/**/*.test.ts\"",
+    "typecheck": "tsc --noEmit",
+    "example:chat": "node examples/01-basic-chat.ts",
+    "example:stream": "node examples/02-streaming.ts",
+    "example:models": "node examples/03-switch-models.ts",
+    "example:agent": "node examples/04-simple-agent.ts",
+    "example:incognito": "node examples/05-incognito.ts"
+  },
+  "dependencies": {
+    "openai": "^5.23.0"
+  },
+  "optionalDependencies": {
+    "nation-incognito": "0.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.18.0",
+    "typescript": "^5.9.0"
+  }
+}

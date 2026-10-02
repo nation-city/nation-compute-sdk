@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nation-compute"
+version = "0.1.0"
+description = "Build on the NATION Compute API: one OpenAI-compatible key across many models, paid with compute credits."
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.9"
+dependencies = ["openai>=1.40"]
+
+[project.urls]
+Homepage = "https://thenation.city"
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[tool.setuptools]
+packages = ["nation_compute"]
